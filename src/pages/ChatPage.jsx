@@ -112,7 +112,7 @@ export const ChatPage = () => {
                 }
             }} onChange={(e) => setQuery(e.target.value)} value={query} rows={3}  placeholder="Ask Anything" name="message" className="resize-none p-2 rounded-xl bg-transparent w-full"></textarea>
             <div className="p-2 flex justify-between items-center gap-2">
-                {!isThinking && <IoSendOutline size={25} className="text-white cursor-pointer" />}
+                {!isThinking && <button type="submit"><IoSendOutline size={25} className="text-white cursor-pointer" /></button>}
             </div>
         </form>
     </div>
